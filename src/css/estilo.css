@@ -2,19 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f7f0f0;
+    background: #c7e2e0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: 0.2s linear;
   }
   
-  body {
-    background: #000000;
-  }
+ body {
+  background: linear-gradient(to bottom, #e0f7f9, #ffffff);
+}
+
   
   /* HEADER */
   header {
-    background:#f7f0f0;
-    color: #679c9e;
+    background:#c7e2e0;
+    color: #ffffff;
     padding:0%;
     width: 100%;
     display: flex;
@@ -24,20 +25,23 @@
     z-index: 1000;
     
     
+    
   }
   .lupa{
     position: absolute;left:70%;top:38%;
+    
   }
   .lupa:hover{
     width: 60px;
     height: 60px;
+    
   }
   
   
   .logo1{
-    width: 15%;
-    position: relative;left: 0%;top: 2%;
-    background-color: transparent;
+   width: 15%;
+  position: relative;
+  background-color: transparent;
   }
   
   header nav ul {
@@ -47,15 +51,13 @@
     position: absolute;right: 50%;top: 40%;
     background-color: transparent;
     
+    
   }
   
   header nav ul li a {
-    text-decoration: none;
-    color: #3c3f3f;
-    font-weight: 400;
-    font-family: "IBM Plex Serif", serif;;
-    font-size: 150%;
-    background-color: transparent;
+     color: #8b8989;
+  font-weight: 500;
+  font-size: 130%;
     
 
   }
@@ -77,9 +79,34 @@
       width: 100%;
   height: 900px;/* por exemplo */
   object-fit: cover;
-  transition: 0.3s;
+  
   box-shadow: #000000;
+   object-fit: cover;
+  transition: opacity 0.9s ease-in-out;
   }
+  .indicadores {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.ponto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;top: 90%;
+}
+
+.ponto.ativo {
+  background-color: #333;
+}
   
   
   .trocar{
@@ -100,33 +127,33 @@
    
   }
   .conteudo{
-    position: relative;top: 10%;
+    position: absolute;top: 100%;left: 47%;
   
   }
   .tema{
-    position: absolute;left: 46%;top: 100%;
-    background-color: transparent;
-    width: 50%;
-    background-color: transparent;
-    font-weight: 400;
-    font-family: "IBM Plex Serif", serif;;
+     font-size: 2.2rem;
+  font-family: "IBM Plex Serif", serif;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+   
   }
  .su{
-  position: absolute;top: 110%;left: 20%;
+  position: absolute;top: 105%;left: 20%;
   font-size: 150%;
   background-color: transparent;
   font-weight: 400;
     font-family: "IBM Plex Serif", serif;;
  }
  .int{
-  position: absolute;top: 110%;left: 70%;
+  position: absolute;top: 105%;left: 70%;
   font-size: 150%;
   background-color: transparent;
   font-weight: 400;
     font-family: "IBM Plex Serif", serif;;
  }
  .seg{
-  position: absolute;top: 110%;left: 46%;
+  position: absolute;top: 105%;left: 47%;
   font-size: 150%;
   background-color: transparent;
   font-weight: 400;
@@ -134,31 +161,36 @@
   
  }
  .aba{
-  background-color: #dde2e2;
-  margin-top:-1%;
-    padding:0%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: #000000
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
  }
  .img1{
-  height: 11%;
-  width: 7%;
-  position: absolute;left: 70%;top: 115%;
+  height: 18%;
+  width: 13%;
+  position: absolute;left: 67%;top: 110%;
   border-radius: 100%;
+   object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
  }
 .img2{
-  height: 11%;
-  width: 7%;
-  position: absolute;right: 73%;top: 115%;
+  height: 18%;
+  width: 13%;
+  position: absolute;right: 69%;top: 110%;
   border-radius: 100%;
+   object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
  }
  .img3{
-  height: 11%;
-  width: 7%;
-  position: absolute;right: 47%;top: 115%;
+  height: 18%;
+  width: 13%;
+  position: absolute;right: 44%;top: 110%;
   border-radius: 100%;
+   object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
  }
  .conteudo-principal{
   background-color: #373a3a;
@@ -195,6 +227,127 @@
   font-weight: 450;
     font-family: "IBM Plex Serif", serif;;
  }
+ .p2{
+  position: absolute;top: 155%;left: 4%;
+  font-size: 150%;
+  background-color: transparent;
+  font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+ }
+ .grafico{
+  width: 17%;
+  position: absolute;top: 160%;left: 30%;
+  background-color: transparent;
+  font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+ }
+ .focos {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #435257;
+   font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+}
+
+.focos h2 {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+   font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+}
+
+.focos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 3rem;
+  flex-wrap: wrap;
+  padding: 3%;
+
+}
+
+.foco-item {
+  text-align: center;
+  max-width: 200px;
+  
+}
+
+.foco-item img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #679c9e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+  
+}
+
+.foco-item h3 {
+  margin-top: 1rem;
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 1.2rem;
+  color: #333;
+   font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+}
+
+/* Seção Atuação */
+.atuacao {
+  padding: 4rem 2rem;
+  background-color: #9db6c7;
+  text-align: center;
+
+}
+
+.atuacao h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+   font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+}
+
+.atuacao-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.atuacao-conteudo .texto {
+  font-size: 120%;
+  color: #333;
+  max-width: 300px;
+   font-weight: 450;
+    font-family: "IBM Plex Serif", serif;;
+}
+
+.atuacao-conteudo img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .focos-lista, .atuacao-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foco-item img,
+  .atuacao-conteudo img {
+    width: 80%;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
   
   
