@@ -14,7 +14,7 @@
   
   /* HEADER */
   header {
-    background:#c7e2e0;
+    
     color: #ffffff;
     padding:0%;
     width: 100%;
@@ -28,8 +28,8 @@
     
   }
   .lupa{
-    position: absolute;left:70%;top:38%;
-    
+    position: absolute;left:93%;top:45%;
+    background: transparent;
   }
   .lupa:hover{
     width: 60px;
@@ -160,6 +160,7 @@
     font-family: "IBM Plex Serif", serif;;
   
  }
+ 
  .aba{
   background-color: #f0f0f0;
   padding: 4rem 2rem;
@@ -348,6 +349,16 @@
     transform: translateX(-50%);
   }
 }
+nav ul{
+  left: 170px;
+ 
 
-  
-  
+}
+
+a {
+  text-decoration: none;
+  background: transparent;
+}
+li{
+  background: transparent;
+}
